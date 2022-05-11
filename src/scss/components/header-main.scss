@@ -1,0 +1,64 @@
+.header-main {
+  padding-top: 35px;
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+
+    svg {
+      // margin-right: 12px;
+    }
+  }
+  .mid {
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    svg {
+      margin: 0 20px;
+    }
+  }
+  .right {
+    display: flex;
+  }
+
+  .page__text-24-Regular {
+    margin: 0 20px;
+    position: relative;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      font-family: "Montserrat";
+      transition: 0.2s ease-in-out;
+
+      &::after {
+        display: block;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+      display: none;
+      transition: 0.2s ease-in-out;
+    }
+  }
+
+  p {
+    margin: 0 10px;
+    position: relative;
+    //   &:hover {
+    //   }
+  }
+}

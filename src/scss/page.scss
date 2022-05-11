@@ -1,0 +1,211 @@
+.page {
+  a {
+    text-decoration: none;
+  }
+
+  &__text {
+    &-12-Regular {
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 12px;
+      color: #fff;
+    }
+    &-15-Regular {
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 16px;
+      color: #fbf2f2;
+      letter-spacing: 1px;
+    }
+    &-16-Regular {
+      font-family: "Montserrat";
+      font-weight: 500;
+      font-size: 16px;
+      color: #000303;
+    }
+    &-18-Regular {
+      font-family: "Montserrat";
+      font-weight: 500;
+      font-size: 18px;
+      color: #000303;
+    }
+    &-20-Regular {
+      font-family: "Montserrat";
+      font-weight: 500;
+      font-size: 18px;
+      color: #000303;
+    }
+    &-20-Regular-pink {
+      font-family: "Montserrat";
+      font-weight: 00;
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: #fbf2f2;
+    }
+    &-15-Medium {
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 24px;
+      color: #000303;
+    }
+    &-24-Regular {
+      font-family: "Montserrat";
+      font-weight: 500;
+      font-size: 24px;
+      color: #000303;
+    }
+    &-25-Medium {
+      font-family: "Cormorant Infant";
+      font-weight: 400;
+      font-size: 25px;
+      color: #fff;
+    }
+    &-24-Semi {
+      font-family: "Montserrat";
+      font-weight: 500;
+      font-size: 24px;
+      color: #000303;
+    }
+    &-20-Semi {
+      font-family: "Montserrat";
+      font-weight: 500;
+      font-size: 20px;
+      color: #fff;
+    }
+    &-28-Medium-black {
+      font-family: "Cormorant Infant";
+      font-weight: 400;
+      font-size: 28px;
+      color: #000;
+    }
+    &-32-Bold {
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 32px;
+      color: #000;
+    }
+    &-32-Medium {
+      font-family: "Cormorant Infant";
+      font-weight: 400;
+      font-size: 48px;
+      color: #fff;
+    }
+  }
+
+  &__btn {
+    &-1 {
+      font-family: "Montserrat";
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      height: 52px;
+      padding: 11px 43px;
+      font-size: 20px;
+      color: #fff;
+      border: transparent;
+      background-color: #c190a8;
+      border-radius: 6px;
+      &:hover {
+        transition: 0.2s ease-in-out;
+        background-color: #ff4978;
+        opacity: 0.5;
+      }
+    }
+    &-1-blue {
+      font-family: "Montserrat";
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      height: 52px;
+      padding: 11px 43px;
+      font-size: 20px;
+      color: #fff;
+      border: transparent;
+      background-color: #c190a8;
+      border-radius: 6px;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        transition: 0.2s ease-in-out;
+        background-color: lightblue;
+        opacity: 0.5;
+        color: #000;
+      }
+    }
+    &-2 {
+      font-family: "Montserrat";
+      font-weight: 400;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      height: 62px;
+      padding: 11px 43px;
+      font-size: 20px;
+      color: #fff;
+      border: transparent;
+      background-color: #c190a8;
+      border-radius: 0px;
+    }
+    &-3 {
+      font-family: "Montserrat";
+      font-weight: 400;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      height: 62px;
+      padding: 11px 43px;
+      font-size: 24px;
+      letter-spacing: 0.8px;
+      color: #fff;
+      border: transparent;
+      background-color: transparent;
+      border-radius: 20px;
+      border: 2px solid #bfa1ad;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        transition: 0.2s ease-in-out;
+        background-color: #c190a8;
+      }
+    }
+
+    &-4 {
+      font-family: "Montserrat";
+      font-weight: 400;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      height: 62px;
+      padding: 11px 43px;
+      font-size: 24px;
+      letter-spacing: 0.8px;
+      color: #c190a8;
+      border: transparent;
+      background-color: transparent;
+      border-radius: 20px;
+      border: 2px solid #bfa1ad;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        transition: 0.2s ease-in-out;
+        background-color: #c190a8;
+        color: #fff;
+      }
+    }
+  }
+
+  .pink {
+    color: #bfa1ad;
+  }
+}
