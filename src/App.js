@@ -41,19 +41,6 @@ function App() {
         exact
       />
     </Routes>
-    // <div className="wrapper">
-    //   <div className="content">
-
-    //     {/* <nav className="container-form container-form__nav">
-    //       <Link to="/">
-    //         <button className="button">Register</button>
-    //       </Link>
-    //       <Link to="/login">
-    //         <button className="button">Login</button>
-    //       </Link>
-    //     </nav> */}
-    //   </div>
-    // </div>
   );
 }
 
