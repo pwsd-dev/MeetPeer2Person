@@ -1,7 +1,7 @@
 import { observable, computed, action } from "mobx";
 import { postData } from "../api/postData.jsx";
 
-const apiItems = postData("http://makefriendsback.promo-miner.art/test_main/");
+const items = postData("http://makefriendsback.promo-miner.art/test_main/");
 
 // apiItems
 //   .then((data) => {
