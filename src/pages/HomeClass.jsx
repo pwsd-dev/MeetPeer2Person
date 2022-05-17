@@ -12,17 +12,17 @@ export default class HomeClass extends React.Component {
       return <li>{item.title}</li>;
     });
 
-    const getItems = postData(
-      "http://makefriendsback.promo-miner.art/test_main/"
-    );
+    // const getItems = postData(
+    //   "http://makefriendsback.promo-miner.art/test_main/"
+    // );
 
-    getItems
-      .then((data) => {
-        console.log(data[0].data.name);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    // getItems
+    //   .then((data) => {
+    //     console.log(data[0].data.name);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
 
     return (
       <div className="">
@@ -33,7 +33,7 @@ export default class HomeClass extends React.Component {
               <div>dasasdasdasd</div>
             </div>
             <div className="right-side">
-              {items}
+              {/* {items} */}
               {/* {itemsModel.items.map((item) => (
                 <li>{item.title}</li>
               ))} */}
