@@ -10,7 +10,7 @@ import { postData } from "../api/postData.jsx";
 import ItemMain from "../components/itemMain/ItemMain";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchItems } from "../store/slices/itemsSlice";
-
+// import Items  from '../storeMobx/items';
 // import { server } from "../api/server.jsx";
 
 // import * as ArticlesModel from "../store/articles/articles";
@@ -73,7 +73,8 @@ function Home() {
   // const items = useSelector((state) => state.items);
 
   // console.log(items);
-
+  // let somebody = Items.getSomebody();
+  // console.log(somebody);
   return (
     <div className="">
       <HeaderMain />
