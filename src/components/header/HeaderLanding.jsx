@@ -3,13 +3,6 @@ import { Link } from "react-router-dom";
 import Burger from "../burger/Burger";
 
 function HeaderLanding() {
-  // function openBlock() {
-  //   const burgerBtn = document.getElementById("burgerBtn");
-  //   const otherId = document.getElementById("other");
-  //   burgerBtn.classList.toggle("active");
-  //   otherId.classList.toggle("hidden");
-  //   otherId.querySelector(".inner").classList.toggle("active");
-  // }
   return (
     <header className="container-header-landing page wrapper">
       <Link to="/">
