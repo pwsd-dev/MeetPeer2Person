@@ -23,3 +23,5 @@ function getItems() {
     },
   ];
 }
+
+export default new Items();

@@ -16,11 +16,9 @@ export default function makeRequest(url = "", data = {}, baseUrl = "") {
         throw new Error(text);
       });
     }
-    return response.text();
+    return response.json();
   });
 }
-
-//  ВПИЗДУ ДЕЛАЮ ПРЯМОЙ ЗАПРОС ТУТ
 
 // var url = "http://makefriendsback.promo-miner.art/test_main/";
 

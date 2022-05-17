@@ -10,7 +10,7 @@ import { postData } from "../api/postData.jsx";
 import ItemMain from "../components/itemMain/ItemMain";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchItems } from "../store/slices/itemsSlice";
-import items from "../storeMobx/items";
+
 // import { server } from "../api/server.jsx";
 
 // import * as ArticlesModel from "../store/articles/articles";
@@ -94,8 +94,6 @@ function Home() {
       </div>
 
       <div></div>
-      {/* <WeatherPage /> */}
-      {/* <WeatherComponent /> */}
     </div>
   );
 }

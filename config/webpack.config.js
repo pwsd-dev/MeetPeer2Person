@@ -815,10 +815,11 @@ module.exports = function (webpackEnv) {
       morris: "Morris",
     },
     devServer: {
+      historyApiFallback: true,
       overlay: true,
       proxy: {
-        "/**": {
-          target: "http://makefriendsback.promo-miner.art/test_main",
+        "/http://makefriendsback.promo-miner.art/**": {
+          target: "http://localhost",
           secure: false,
           changeOrigin: true,
         },
