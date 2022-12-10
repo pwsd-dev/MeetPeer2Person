@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react';
 // import WeatherComponent from "../components/weather/WeatherComponent";
-import HeaderMain from "../components/header/HeaderMain";
+import HeaderMain from '../components/header/HeaderMain';
 // import WeatherPage from "../pages/WeatherPage";
 // import { useAuth } from "../hooks/use-auth";
 // import { Navigate } from "react-router-dom";
 // import { Link } from "react-router-dom";
-import axios from "axios";
-import { postData } from "../api/postData.jsx";
-import ItemMain from "../components/itemMain/ItemMain";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchItems } from "../store/slices/itemsSlice";
-
+import axios from 'axios';
+import { postData } from '../api/postData.jsx';
+import ItemMain from '../components/itemMain/ItemMain';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchItems } from '../store/slices/itemsSlice';
+// import Items  from '../storeMobx/items';
 // import { server } from "../api/server.jsx";
 
 // import * as ArticlesModel from "../store/articles/articles";
@@ -58,9 +58,7 @@ import { fetchItems } from "../store/slices/itemsSlice";
 // xhr.open("POST", url);
 
 function Home() {
-  const getItems = postData(
-    "http://makefriendsback.promo-miner.art/test_main/"
-  );
+  const getItems = postData('http://makefriendsback.promo-miner.art/test_main/');
 
   getItems.then((res) => {
     console.log(res);
@@ -71,8 +69,6 @@ function Home() {
   const dispatch = useDispatch();
 
   const items = useSelector((state) => state.items);
-
-  console.log(items);
 
   return (
     <div className="">

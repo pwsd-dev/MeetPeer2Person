@@ -1,8 +1,10 @@
 import { observable, computed, action } from "mobx";
 import { postData } from "../api/postData.jsx";
 
-const items = postData("http://makefriendsback.promo-miner.art/test_main/");
-
+const itemsResponse = postData("http://makefriendsback.promo-miner.art/test_main/");
+const RESULT = itemsResponse.then((res)=>{
+  return res;
+})
 // apiItems
 //   .then((data) => {
 //     // console.log(data[0].data.name);
@@ -14,8 +16,14 @@ const items = postData("http://makefriendsback.promo-miner.art/test_main/");
 
 class Items {
   // @observable items = apiItems.then((data) => console.log(data));
+  RESULT = RESULT[0];
+  @observable itemsSome = {
+    somebody: this.RESULT,
+  };
 
-  @observable items = [];
+  @computed getSomebody(){
+    return this.itemsSome.somebody;
+  }
 }
 
 // function
