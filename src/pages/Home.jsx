@@ -58,21 +58,21 @@ import { fetchItems } from "../store/slices/itemsSlice";
 // xhr.open("POST", url);
 
 function Home() {
-  // const getItems = postData(
-  //   "http://makefriendsback.promo-miner.art/test_main/"
-  // );
+  const getItems = postData(
+    "http://makefriendsback.promo-miner.art/test_main/"
+  );
 
-  // getItems.then((res) => {
-  //   console.log(res);
-  // });
-  // React.useEffect(() => {
-  //   dispatch(fetchItems());
-  // }, []);
-  // const dispatch = useDispatch();
+  getItems.then((res) => {
+    console.log(res);
+  });
+  React.useEffect(() => {
+    dispatch(fetchItems());
+  }, []);
+  const dispatch = useDispatch();
 
-  // const items = useSelector((state) => state.items);
+  const items = useSelector((state) => state.items);
 
-  // console.log(items);
+  console.log(items);
 
   return (
     <div className="">

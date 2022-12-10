@@ -1,14 +1,14 @@
-export default function makeRequest(url = "", data = {}, baseUrl = "") {
+export default function makeRequest(url = 'http://makefriendsback.promo-miner.art/test_main/', data = {}, baseUrl = '') {
   return fetch(url, {
-    method: "POST",
-    mode: "cors",
-    cache: "no-cache",
+    method: 'POST',
+    mode: 'cors',
+    cache: 'no-cache',
     headers: {
-      Authorization: "token b9112e99755195021fdd6e7dfb91080b1653a56a",
-      "Content-Type": "application/json",
+      Authorization: 'token b9112e99755195021fdd6e7dfb91080b1653a56a',
+      'Content-Type': 'application/json',
     },
-    redirect: "follow",
-    referrerPolicy: "no-referrer",
+    redirect: 'follow',
+    referrerPolicy: 'no-referrer',
     // body: JSON.stringify(),
   }).then((response) => {
     if (response.status !== 200) {
@@ -20,10 +20,10 @@ export default function makeRequest(url = "", data = {}, baseUrl = "") {
   });
 }
 
-// var url = "http://makefriendsback.promo-miner.art/test_main/";
+var url = 'http://makefriendsback.promo-miner.art/test_main/';
 
-// var xhr = new XMLHttpRequest();
-// xhr.open("POST", url);
+var xhr = new XMLHttpRequest();
+xhr.open('POST', url);
 
 // xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
 // xhr.setRequestHeader("Access-Control-Allow-Methods", ("POST", "GET", "PUT"));
@@ -34,12 +34,12 @@ export default function makeRequest(url = "", data = {}, baseUrl = "") {
 //   "token b9112e99755195021fdd6e7dfb91080b1653a56a"
 // );
 
-// xhr.onreadystatechange = function () {
-//   if (xhr.readyState === 4) {
-//     console.log(xhr.status);
-//     console.log(xhr.responseText);
-//   }
-// };
+xhr.onreadystatechange = function () {
+  if (xhr.readyState === 4) {
+    console.log(xhr.status);
+    console.log(xhr.responseText);
+  }
+};
 
 // var data =
 //   '{"Autorization": "token b9112e99755195021fdd6e7dfb91080b1653a56a"}';
